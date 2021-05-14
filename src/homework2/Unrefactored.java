@@ -17,6 +17,15 @@ public class Unrefactored {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Recipes r = new Recipes();
+        r.addRecipe();
+    }
+
+}
+
+class Recipes {
+
+    void addRecipe() {
         String name_1 = "";
         String[] itype_1 = new String[30];
         String[] un_1 = new String[30];
@@ -45,7 +54,7 @@ public class Unrefactored {
         un_1[3] = "kg";
         mnt_1[3] = 0.250;
         c_1[3] = 200.0;
-           
+
         cdescp_1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " + "\n"
                 + "Donec efficitur purus at leo bibendum feugiat. " + "\n"
                 + "Duis dictum tempus libero, et iaculis augue blandit non. " + "\n"
@@ -104,7 +113,7 @@ public class Unrefactored {
         System.out.println("Cooking Description : \n" + cdescp_1 + "\n");
 
         System.out.println("\n\n" + name_2 + "\n");
-        double mc_2 = 0.0; 
+        double mc_2 = 0.0;
         for (int i = 0; i < itype_2.length; i++) {
             if (itype_2[i] != null) {
                 mc_2 += c_2[i];
